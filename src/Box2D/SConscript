@@ -1,0 +1,8 @@
+#!/usr/local/bin/python
+
+import os
+env = Environment(ENV = os.environ, CPPDEFINES = ['SFML_STATIC'], LINKFLAGS = ['/MD'])
+
+libs = ['sfml-graphics', 'sfml-window', 'sfml-system']
+
+env.Program('demo', env.Glob('src/*cpp'), LIBS=libs)
