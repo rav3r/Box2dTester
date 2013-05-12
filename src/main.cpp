@@ -15,10 +15,11 @@ b2World* gWorld;
 #include "Box2dTest.h"
 
 #include "HelloTest.h"
+#include "RayCastTest.h"
 
 int main()
 {
-	Box2dTest* test = new HelloTest();
+	Box2dTest* test = new RayCastTest();
 
 	DebugDraw debug;
 	debug.SetFlags(1+2+4+8+16+32+64);
@@ -54,6 +55,8 @@ int main()
 		
 		while(window.pollEvent(event))
 		{
+			test->OnEvent(event);
+
 			if(event.type == sf::Event::Closed)
 				window.close();
 
@@ -120,11 +123,15 @@ int main()
 		// draw imgui
 		test->DoGui(gui);
 
+
 		// draw box2d debug data
 		sf::FloatRect box2DRect(-16, 0, 32, 24);
 		sf::View box2DView(box2DRect);
 		window.setView(box2DView);
 		world.DrawDebugData();
+
+		window.setView(imguiView);
+		test->Draw();
 
 		window.display();
 	}

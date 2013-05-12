@@ -43,4 +43,5 @@ public:
 	virtual void Draw() {}
 	virtual void DoGui(igContext& gui) {}
 	virtual void Step(float delta) {}
+	virtual void OnEvent(sf::Event& event) {}
 };

@@ -103,16 +103,24 @@
 				>
 			</File>
 		</Filter>
-		<File
-			RelativePath=".\src\Box2dTest.h"
+		<Filter
+			Name="Tests"
 			>
-		</File>
+			<File
+				RelativePath=".\src\Box2dTest.h"
+				>
+			</File>
+			<File
+				RelativePath=".\src\HelloTest.h"
+				>
+			</File>
+			<File
+				RelativePath=".\src\RayCastTest.h"
+				>
+			</File>
+		</Filter>
 		<File
 			RelativePath=".\src\DebugDraw.h"
-			>
-		</File>
-		<File
-			RelativePath=".\src\HelloTest.h"
 			>
 		</File>
 		<File
