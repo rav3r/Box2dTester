@@ -115,6 +115,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\RayCast2Test.h"
+				>
+			</File>
+			<File
 				RelativePath=".\src\RayCastTest.h"
 				>
 			</File>
