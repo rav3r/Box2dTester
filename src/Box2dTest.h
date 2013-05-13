@@ -4,7 +4,7 @@ extern b2World* gWorld;
 
 //////////////////////////////////////////////////////////////////////////
 
-inline void NewBox(float x, float y, b2World& world)
+inline b2Body* NewBox(float x, float y, b2World& world)
 {
 	b2BodyDef bodyDef;
 	bodyDef.type = b2_dynamicBody;
@@ -17,9 +17,10 @@ inline void NewBox(float x, float y, b2World& world)
 	fixtureDef.density = 1.0f;
 	fixtureDef.friction = 0.3f;
 	body->CreateFixture(&fixtureDef);
+	return body;
 }
 
-inline void NewCircle(float x, float y, b2World& world)
+inline b2Body* NewCircle(float x, float y, b2World& world)
 {
 	b2BodyDef bodyDef;
 	bodyDef.type = b2_dynamicBody;
@@ -32,6 +33,7 @@ inline void NewCircle(float x, float y, b2World& world)
 	fixtureDef.density = 1.0f;
 	fixtureDef.friction = 0.3f;
 	body->CreateFixture(&fixtureDef);
+	return body;
 }
 
 //////////////////////////////////////////////////////////////////////////

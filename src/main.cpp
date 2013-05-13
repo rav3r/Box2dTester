@@ -17,10 +17,11 @@ b2World* gWorld;
 #include "HelloTest.h"
 #include "RayCastTest.h"
 #include "RayCast2Test.h"
+#include "GroupTest.h"
 
 int main()
 {
-	Box2dTest* test = new RayCast2Test();
+	Box2dTest* test = new GroupTest();
 
 	DebugDraw debug;
 	debug.SetFlags(1+2+4+8+16+32+64);
