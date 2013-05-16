@@ -126,6 +126,10 @@
 				RelativePath=".\src\RayCastTest.h"
 				>
 			</File>
+			<File
+				RelativePath=".\src\SensorTest.h"
+				>
+			</File>
 		</Filter>
 		<File
 			RelativePath=".\src\DebugDraw.h"
