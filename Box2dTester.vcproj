@@ -119,6 +119,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\JointDistanceTest.h"
+				>
+			</File>
+			<File
 				RelativePath=".\src\RayCast2Test.h"
 				>
 			</File>

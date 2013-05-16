@@ -19,10 +19,11 @@ b2World* gWorld;
 #include "RayCast2Test.h"
 #include "GroupTest.h"
 #include "SensorTest.h"
+#include "JointDistanceTest.h"
 
 int main()
 {
-	Box2dTest* test = new SensorTest();
+	Box2dTest* test = new JointDistanceTest();
 
 	DebugDraw debug;
 	debug.SetFlags(1+2+4+8+16+32+64);
